@@ -1,0 +1,32 @@
+#btn1 {
+    background-color: #7366ff;
+    width: 370px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+}
+
+#btn1:hover {
+    background-color: #675be7;
+    color: #cac6fd;
+}
+
+.btn2 {
+    background-color: #7366ff;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.search {
+    border: 1px solid #d7dae3;
+    padding: 0.3rem 0.5rem;
+    color: #7e7e7e;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width:165px;
+}
