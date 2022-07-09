@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div id="main-wrapper" class="show">
+            <!-- start logo components -->
+            <div class="nav-header">
+                <div class="brand-logo">
+                    <a href="index.jsp"> <img class="logo-tabib" src="./pic/main.png" alt=""></a>
+                    <a href="index.jsp"><img class="brand-title" src="./pic/newLogo.png" alt="" style="width: 110px"></a>
+                </div>
+            </div>
+            <!-- End logo components -->
+        
+            <!-- start section sidebar -->
+            <aside class="left-panel nicescroll-box">
+                <nav class="navigation">
+                    <ul class="list-unstyled main-menu">
+                        <li class="has-submenu active">
+                            <a href="index.html">
+                                <i class="fas fa-th-large"></i>
+                                <span class="nav-label">首页</span>
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="userManagement.html">
+                                <i class="fas fa-cog"></i>
+                                <span class="nav-label">用户管理</span>
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#" class="has-arrow mm-collapsed">
+                                <i class="fas fa-book-medical"></i>
+                                <span class="nav-label">桥梁管理</span>
+                            </a>
+                            <ul class="list-unstyled mm-collapse">
+                                <li><a href="bridge.html">桥梁资料卡</a></li>
+                                <li><a href="bridgeType.html">桥梁类型</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#" class="has-arrow mm-collapsed">
+                                <i class="fas fa-heartbeat"></i>
+                                <span class="nav-label">日常检查</span>
+                            </a>
+                            <ul class="list-unstyled mm-collapse">
+                                <li><a href="dailyInspections.html">日常巡查项</a></li>
+                                <li><a href="damageType.html">损坏类型</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu active">
+                            <a href="https://blog.csdn.net/apple_52030329/article/details/125697956?spm=1001.2014.3001.5502">
+                                <i class="fas fa-th-large"></i>
+                                <span class="nav-label">课程报告</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- End section sidebar -->
+        
+        
+            <!-- start section header -->
+            <div class="header">
+                <header class="top-head container-fluid">
+                    <div class="nav-control">
+                        <div class="hamburger">
+                            <span class="line"></span><span class="line"></span><span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="fullscreen notification_dropdown">
+                            <div class="full">
+                                <a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-account-wrapper">
+                            <div class="account-wrapper">
+                                <div class="account-control">
+                                    <a class="login header-profile" href="#" title="Sign in">
+                                        <div class="header-info">
+                                            <span>管理员</span>
+                                            <small>张三</small>
+                                        </div>
+                                        <img src="./pic/09.jpg" alt="people">
+                                    </a>
+                                    <div class="account-dropdown-form dropdown-container">
+                                        <div class="form-content">
+                                            <a href="doctor-settings.html">
+                                                <i class="far fa-user"></i>
+                                                <span class="ml-2">Profile</span>
+                                            </a>
+                                            <a href="login.jsp">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                                <span class="ml-2">Logout </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <!-- End section header -->
+
+
+            <!-- start section content -->
+        <div class="content-body">
+            <div class="warper container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-lg-12 p-md-0">
+                        <h4 class="text-primary">welcome, <span class="names">张三</span></h4>
+                        <p class="mb-0">桥梁检测系统 | 首页</p>
+                    </div>
+                </div>
+                <div class="new-patients main_container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-3 col-lg-6">
+                            <div class="widget card card-primary">
+                                <div class="card-body">
+                                    <div class="media text-center">
+                                        <span>
+                                            <i class="fas fa-calendar-check fa-2x"></i>
+                                        </span>
+                                        <div class="media-body">
+                                            <span class="text-white">桥梁数量</span>
+                                            <h3 class="mb-0 text-white">760</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 col-lg-6">
+                            <div class="widget card card-danger">
+                                <div class="card-body">
+                                    <div class="media text-center">
+                                        <span>
+                                            <i class="fas fa-user-nurse fa-2x"></i>
+                                        </span>
+                                        <div class="media-body">
+                                            <span class="text-white">有损坏</span>
+                                            <h3 class="mb-0 text-white">256</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 col-lg-6">
+                            <div class="widget card card-primary">
+                                <div class="card-body">
+                                    <div class="media text-center">
+                                        <span>
+                                            <i class="fas fa-user-plus fa-2x"></i>
+                                        </span>
+                                        <div class="media-body">
+                                            <span class="text-white">累计维修</span>
+                                            <h3 class="mb-0 text-white">1360</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 col-lg-6">
+                            <div class="widget card card-primary">
+                                <div class="card-body">
+                                    <div class="media text-center">
+                                        <span>
+                                            <i class="fas fa-database fa-2x"></i>
+                                        </span>
+                                        <div class="media-body">
+                                            <span class="text-white">收益</span>
+                                            <h3 class="mb-0 text-white">$6500</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow widget1">
+                                <div class="card-header">
+                                    <h4 class="card-title">活动</h4>
+                                    <span class="subtitle">TODAY 29, May 2022</span>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chart1" width="100%" height="40"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow widget1">
+                                <div class="card-header">
+                                    <h4 class="card-title">最大破损类型</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <canvas id="chart3" width="100%" height="220"></canvas>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <ul class="d-flex justify-content-between m-t-30">
+                                                <li class="content-widget text-center">
+                                                    <p class="mb-0 fs-14 text-muted">网裂或龟裂</p>
+                                                    <h4 class="mb-0 fs-20 text-dark-gray">8952</h4>
+                                                </li>
+                                                <li class="content-widget text-center">
+                                                    <p class="mb-0 fs-14 text-muted">坑槽</p>
+                                                    <h4 class="mb-0 fs-20 text-dark-gray">7458</h4>
+                                                </li>
+                                                <li class="content-widget text-center">
+                                                    <p class="mb-0 fs-14 text-muted">碎裂或破碎</p>
+                                                    <h4 class="mb-0 fs-20 text-dark-gray">3254</h4>
+                                                </li>
+                                                <li class="content-widget text-center">
+                                                    <p class="mb-0 fs-14 text-muted">坑洞</p>
+                                                    <h4 class="mb-0 fs-20 text-dark-gray">3254</h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow widget1">
+                                <div class="card-header">
+                                    <h4 class="card-title">每日维修损坏统计</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chart2" width="100%" height="299"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End section content -->
+
+            
+        </div>
+
+
+        
+        <!-- JQuery v3.5.1 -->
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        
+        <!-- popper js -->
+        <script src="./js/popper.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <script src="./js/bootstrap.js"></script>
+        
+        <!-- Moment -->
+        <script src="./js/moment.min.js"></script>
+        
+        <!-- Date Range Picker -->
+        <script src="./js/daterangepicker.min.js"></script>
+
+        <!-- Datatable -->
+        <script src="./js/jquery.dataTables.min.js"></script>
+        <script src="./js/init-tdatatable.js"></script>
+
+         <!-- Chart js -->
+        <script src="./js/Chart.min.js"></script>
+        <script src="./js/charts-custom.js"></script>
+        
+        <!-- Main Custom JQuery -->
+        <script src="./js/toggleFullScreen.js"></script>
+        <script src="./js/main.js"></script>
+        </body>
+</html>

@@ -1,0 +1,329 @@
+<html>
+    <head>
+        <title>桥梁资料卡</title>
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div id="main-wrapper" class="show">
+            <!-- start logo components -->
+            <div class="nav-header">
+                <div class="brand-logo">
+                    <a href="index.jsp"> <img class="logo-tabib" src="./pic/main.png" alt=""></a>
+                    <a href="index.jsp"><img class="brand-title" src="./pic/newLogo.png" alt="" style="width: 110px"></a>
+                </div>
+            </div>
+            <!-- End logo components -->
+        
+
+            <!-- start section sidebar -->
+            <aside class="left-panel nicescroll-box">
+                <nav class="navigation">
+                    <ul class="list-unstyled main-menu">
+                        <li class="has-submenu">
+                            <a href="index.html">
+                                <i class="fas fa-th-large"></i>
+                                <span class="nav-label">首页</span>
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="userManagement.html">
+                                <i class="fas fa-cog"></i>
+                                <span class="nav-label">用户管理</span>
+                            </a>
+                        </li>
+                        <li class="has-submenu active">
+                            <a href="#" class="has-arrow mm-collapsed">
+                                <i class="fas fa-book-medical"></i>
+                                <span class="nav-label">桥梁管理</span>
+                            </a>
+                            <ul class="list-unstyled mm-collapse">
+                                <li><a href="bridge.html" style="color: #7366ff">桥梁资料卡</a></li>
+                                <li><a href="bridgeType.html">桥梁类型</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#" class="has-arrow mm-collapsed">
+                                <i class="fas fa-heartbeat"></i>
+                                <span class="nav-label">日常检查</span>
+                            </a>
+                            <ul class="list-unstyled mm-collapse">
+                                <li><a href="dailyInspections.html">日常巡查项</a></li>
+                                <li><a href="damageType.html">损坏类型</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu active">
+                            <a href="https://blog.csdn.net/apple_52030329/article/details/125697956?spm=1001.2014.3001.5502">
+                                <i class="fas fa-th-large"></i>
+                                <span class="nav-label">课程报告</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- End section sidebar -->
+            
+        
+            <!-- start section header -->
+            <div class="header">
+                <header class="top-head container-fluid">
+                    <div class="nav-control">
+                        <div class="hamburger">
+                            <span class="line"></span><span class="line"></span><span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="fullscreen notification_dropdown">
+                            <div class="full">
+                                <a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-account-wrapper">
+                            <div class="account-wrapper">
+                                <div class="account-control">
+                                    <a class="login header-profile" href="#" title="Sign in">
+                                        <div class="header-info">
+                                            <span>管理员</span>
+                                            <small>张三</small>
+                                        </div>
+                                        <img src="./pic/09.jpg" alt="people">
+                                    </a>
+                                    <div class="account-dropdown-form dropdown-container">
+                                        <div class="form-content">
+                                            <a href="doctor-settings.html">
+                                                <i class="far fa-user"></i>
+                                                <span class="ml-2">Profile</span>
+                                            </a>
+                                            <a href="login.html">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                                <span class="ml-2">Logout </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <!-- End section header -->
+        
+            <!-- start section content -->
+            <div class="content-body">
+                <div class="warper container-fluid">
+                    <div class="new_appointment main_container">
+                        <div class="row page-titles mx-0">
+                            <div class="col-sm-6 p-md-0">
+                                <div class="welcome-text">
+                                    <h4 class="text-primary">桥梁资料卡</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.jsp">首页</a></li>
+                                    <li class="breadcrumb-item active"><a href="javascript:;">桥梁资料卡</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card shadow">
+                                    <div class="card-header">
+                                        <div class="row m-rl w-100">
+                                            <div class="col-4">
+                                                桥梁名称：
+                                                <input type="search" placeholder="桥梁名称" class="search">
+                                                <a href="javascript:;" class="btn btn-primary float-end">查询</a>
+                                            </div>
+                                            <div class="col-8 float-end">
+                                                <button class="btn btn-primary float-end" data-bs-target="#btAdd" data-bs-toggle="modal" type="button">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="example3" class="display nowrap">
+                                                <thead>
+                                                <tr>
+                                                    <th>桥梁代码</th>
+                                                    <th>桥梁名称</th>
+                                                    <th>地区</th>
+                                                    <th>所在路名</th>
+                                                    <th>等级</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        001
+                                                    </td>
+                                                    <td>嘉陵江大桥</td>
+                                                    <td>重庆</td>
+                                                    <td>嘉陵桥路</td>
+                                                    <td>5</td>
+                                                    <td>
+                                                        <a class='mr-4 delet'>
+                                                            <span class='fas fa-trash-alt'></span>
+                                                        </a>
+                                                        <input type="button" value="编辑" class="btn2" data-bs-target="#btUpdate" data-bs-toggle="modal">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        002
+                                                    </td>
+                                                    <td>黄花园大桥</td>
+                                                    <td>重庆</td>
+                                                    <td>牛角沱</td>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <a class='mr-4 delet'>
+                                                            <span class='fas fa-trash-alt'></span>
+                                                        </a>
+                                                        <input type="button" value="编辑" class="btn2" data-bs-target="#btUpdate" data-bs-toggle="modal">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        003
+                                                    </td>
+                                                    <td>长江大桥</td>
+                                                    <td>重庆</td>
+                                                    <td>长滨路</td>
+                                                    <td>5</td>
+                                                    <td>
+                                                        <a class='mr-4 delet'>
+                                                            <span class='fas fa-trash-alt'></span>
+                                                        </a>
+                                                        <input type="button" value="编辑" class="btn2" data-bs-target="#btUpdate" data-bs-toggle="modal">
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End section content -->
+        
+        
+            <!-- Modal -->
+            <div class="modal fade" id="btAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabelOne">添加桥梁</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row align-items-start" id="formAdd1">
+                                <div class="col form-group">
+                                    <label>桥梁代码</label>
+                                    <input class="form-control" type="text" value="请输入桥梁代码">
+                                </div>
+                                <div class="col form-group">
+                                    <label>桥梁名称</label>
+                                    <input class="form-control" type="text" value="请输入桥梁名称">
+                                </div>
+                                <br>
+                                <div class="col-lg-12">
+                                    <label>地区</label>
+                                    <input class="form-control" type="text" placeholder="请输入地区">
+                                </div>
+                                <p></p>
+                                <div class="col-lg-12">
+                                    <label>所在路名</label>
+                                    <input class="form-control" type="text" placeholder="请输入路名">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                            <input type="button" class="btn badge-primary" value="保存" id="save">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="modal fade" id="btUpdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">修改桥梁</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row align-items-start" id="formAdd1">
+                                <div class="col form-group">
+                                    <label>桥梁代码</label>
+                                    <input class="form-control" type="text" value="请输入桥梁代码">
+                                </div>
+                                <div class="col form-group">
+                                    <label>桥梁名称</label>
+                                    <input class="form-control" type="text" value="请输入桥梁名称">
+                                </div>
+                                <br>
+                                <div class="col-lg-12">
+                                    <label>地区</label>
+                                    <input class="form-control" type="text" placeholder="请输入地区">
+                                </div>
+                                <p></p>
+                                <div class="col-lg-12">
+                                    <label>所在路名</label>
+                                    <input class="form-control" type="text" placeholder="请输入路名">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                            <input type="button" class="btn badge-primary" value="保存" id="save1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal end-->
+        </div>
+        
+        <!-- JQuery v3.5.1 -->
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        
+        <!-- popper js -->
+        <script src="./js/popper.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <script src="./js/bootstrap.min.js"></script>
+        
+        <!-- Moment -->
+        <script src="./js/moment.min.js"></script>
+        
+        <!-- Date Range Picker -->
+        <script src="./js/daterangepicker.min.js"></script>
+        
+        <!-- Datatable -->
+        <script src="./js/jquery.dataTables.min.js"></script>
+        <script src="./js/init-tdatatable.js"></script>
+        
+        <!-- Main Custom JQuery -->
+        <script src="./js/toggleFullScreen.js"></script>
+        <script src="./js/main.js"></script>
+        </body>
+</html>
